@@ -1,0 +1,150 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8b57;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #339e62;
+  --ifm-color-primary-lighter: #35a766;
+  --ifm-color-primary-lightest: #3cb371;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Arribada styling */
+.hero {
+  background: linear-gradient(135deg, #2e8b57 0%, #20b2aa 100%);
+  color: white;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Code block improvements */
+.theme-code-block {
+  margin-bottom: 1rem;
+}
+
+/* Navigation improvements */
+.navbar__brand {
+  font-weight: 700;
+}
+
+/* Footer improvements */
+.footer {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.footer--dark {
+  background-color: #1a1a1a;
+}
+
+/* Custom components */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+/* Platform-specific styling */
+.platform-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.platform-badge--conservation {
+  background-color: #e8f5e8;
+  color: #2e8b57;
+}
+
+.platform-badge--maritime {
+  background-color: #e8f4fd;
+  color: #0066cc;
+}
+
+.platform-badge--research {
+  background-color: #f5f0ff;
+  color: #6b46c1;
+}
+
+/* API documentation styling */
+.api-method {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.api-method--get {
+  background-color: #e8f5e8;
+  color: #2e8b57;
+}
+
+.api-method--post {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.api-method--put {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.api-method--delete {
+  background-color: #f8d7da;
+  color: #721c24;
+}

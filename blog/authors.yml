@@ -1,0 +1,24 @@
+arribada-team:
+  name: Arribada Team
+  title: Platform Development Team
+  url: https://github.com/arribada
+  image_url: https://github.com/arribada.png
+  email: developers@arribada.org
+
+geoffrey:
+  name: Geoffrey Petts
+  title: Lead Engineer
+  url: https://github.com/geoffreypetts
+  image_url: https://github.com/geoffreypetts.png
+
+alex:
+  name: Alex Rogers
+  title: Senior Developer
+  url: https://github.com/alexrogers
+  image_url: https://github.com/alexrogers.png
+
+community:
+  name: Community Contributors
+  title: Open Source Community
+  url: https://github.com/arribada/community
+  image_url: https://github.com/arribada.png
