@@ -12,7 +12,7 @@ The developer portal for Arribada - an open-source platform for conservation tec
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/arribada/developer-portal.git
+git clone https://github.com/arribada/developer_portal.git
 cd developer-portal
 
 # Install dependencies
