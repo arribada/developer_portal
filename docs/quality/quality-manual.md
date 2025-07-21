@@ -47,8 +47,8 @@ This QMS covers:
 ### External Factors
 
 **Regulatory Environment**
-- Radio frequency regulations (FCC, CE, ISED)
-- Environmental protection standards (IP68, MIL-STD)
+- Radio frequency regulations (FCC, CE, EMC & EMI Testing)
+- Environmental protection standards (IP Ratings)
 - Wildlife research permits and ethical requirements
 - Data protection regulations (GDPR, local laws)
 
@@ -123,13 +123,11 @@ graph TD
     A[BOM Preparation] --> B[Component Sourcing]
     B --> C[PCB Assembly]
     C --> D[Functional Testing]
-    D --> E[Environmental Testing]
-    E --> F[Final Assembly]
-    F --> G[Quality Control]
-    G --> H[Packaging & Shipping]
+    D --> E[Final Assembly]
+    E --> F[Quality Control]
+    F --> G[Packaging & Shipping]
     
     D -->|Fail| C
-    E -->|Fail| C
     G -->|Fail| F
 ```
 
@@ -155,7 +153,9 @@ graph TD
 
 #### Schematic Review
 - [ ] All components have valid part numbers
-- [ ] Power budget calculated and within limits
+- [ ] Parts selected are not End of Life or Not Recommended for New Designs.
+- [ ] Power budget calculated (including thermal requirements) and within limits
+- [ ] Style guidelines followed
 - [ ] Protection circuits implemented (ESD, reverse polarity)
 - [ ] Test points accessible
 - [ ] Connector pinouts verified
@@ -169,7 +169,7 @@ graph TD
 - [ ] Mechanical constraints met
 - [ ] Assembly considerations reviewed
 - [ ] Panelization optimized
-- [ ] Gerber files generated and verified
+- [ ] Gerber files, drill and pick & place files generated and verified
 
 #### Mechanical Review
 - [ ] Enclosure design fits PCB and components
@@ -216,7 +216,7 @@ graph TD
 ### Compliance & Approval
 
 #### Regulatory Compliance
-- [ ] FCC/CE/ISED requirements identified
+- [ ] FCC/CE/EMC & EMI requirements identified
 - [ ] Test plan for compliance defined
 - [ ] Documentation prepared
 - [ ] Pre-compliance testing completed
@@ -282,7 +282,7 @@ project:
 ### 3. Design Control
 
 **Version Control:**
-- Hardware: Git + KiCad
+- Hardware: Git + KiCad/Eagle or Altium
 - Firmware: Git + Zephyr
 - Software: Git + CI/CD
 - Documentation: Git + Markdown
@@ -429,13 +429,12 @@ Types:
 - Minor updates: v1.1, v1.2, etc.
 
 **Change History:**
-```markdown
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | v1.0 | 2024-01-15 | J.Smith | Initial release |
 | v1.1 | 2024-02-20 | M.Jones | Updated test procedures |
 | v2.0 | 2024-03-10 | J.Smith | Major revision for new product |
-```
+
 
 ### Access Control
 - Public documents: GitHub public repo
@@ -482,13 +481,12 @@ Types:
 5. Legal review if unclear
 
 **IP Register:**
-```markdown
 | Component | Source | License | Restrictions | Attribution |
 |-----------|--------|---------|--------------|-------------|
 | GPS Module | Internal | CERN-OHL-S | None | Arribada |
 | LoRa Stack | Semtech | BSD-3 | No warranty | Copyright notice |
 | Crypto Lib | mbedTLS | Apache-2.0 | Patent grant | NOTICE file |
-```
+
 
 ## Project Kickoff Checklist
 
@@ -523,14 +521,14 @@ R = Responsible (does the work)
 A = Accountable (approves)
 C = Consulted (provides input)
 I = Informed (kept updated)
-
+```
 | Task | PM | TL | HW | FW | QA | Client |
 |------|----|----|----|----|----|----|
 | Requirements | A | R | C | C | C | I |
 | Design | I | A | R | R | C | I |
 | Testing | I | C | C | C | R | I |
 | Deployment | A | C | I | I | R | C |
-```
+
 
 #### 4. Communication Plan (15 min)
 - [ ] Meeting cadence (weekly/bi-weekly)

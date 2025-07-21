@@ -20,16 +20,15 @@ graph TD
     C --> D[Selective Soldering]
     D --> E[In-Circuit Test]
     E --> F[Functional Test]
-    F --> G[Environmental Screen]
-    G --> H[Final Assembly]
-    H --> I[Final QC]
-    I --> J[Packaging]
+    F --> G[Final Assembly]
+    G --> H[Final QC]
+    H --> I[Packaging]
     
     C -->|Fail| B
     E -->|Fail| D
     F -->|Fail| R[Rework]
     G -->|Fail| R
-    I -->|Fail| R
+    H -->|Fail| R
     R --> E
 ```
 
@@ -58,7 +57,7 @@ graph TD
 - [ ] MSL rating observed
 
 ### Documentation
-- [ ] CoC received
+- [ ] CoC received 
 - [ ] RoHS compliance
 - [ ] Datasheet on file
 - [ ] Traceability info recorded
@@ -135,7 +134,7 @@ graph TD
 **Approved by:** ___________
 ```
 
-### Automated Optical Inspection (AOI)
+<!---### Automated Optical Inspection (AOI) 
 
 **Program Requirements:**
 - Component presence/absence
@@ -149,7 +148,7 @@ graph TD
 - False call rate: < 5%
 - Escape rate: 0%
 - Review all failures
-- Document defect types
+- Document defect types-->
 
 ## Testing Procedures
 
@@ -210,7 +209,7 @@ class HorizonFunctionalTest:
 ```
 
 **Test Limits:**
-```
+
 | Parameter | Min | Typical | Max | Units |
 |-----------|-----|---------|-----|-------|
 | VCC_3V3 | 3.20 | 3.30 | 3.40 | V |
@@ -218,9 +217,9 @@ class HorizonFunctionalTest:
 | GPS TTFF | - | 28 | 35 | s |
 | RF Power | 13 | 14 | 15 | dBm |
 | Flash Write | 80 | 100 | - | KB/s |
-```
 
-### Environmental Screening
+
+<!--### Environmental Screening
 
 **Temperature Cycling:**
 - Low: -20°C
@@ -233,7 +232,7 @@ class HorizonFunctionalTest:
 - Power consumption monitored
 - Communication verified
 - Sensors operational
-- No resets or lockups
+- No resets or lockups-->
 
 ## Quality Control Points
 
