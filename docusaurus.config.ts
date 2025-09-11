@@ -43,7 +43,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/arribada/developer-portal/tree/main/',
+            'https://github.com/arribada/developer_portal/tree/main/',
           // Redirects for moved content
           routeBasePath: 'docs',
         },
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/arribada/developer-portal/tree/main/',
+            'https://github.com/arribada/developer_portal/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
