@@ -52,7 +52,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         UK and EU government validation through DEFRA, CEFAS, and ESA partnerships.
-        €372K ESA contract and proven regulatory compliance.
+        Proven regulatory compliance and trusted by conservation agencies worldwide.
       </>
     ),
     link: '/docs/projects/maritime/marlin',
